@@ -1,0 +1,31 @@
+body {
+    background-color: #AFD4E2;
+    display: block;
+    color: #1E3240;
+    margin: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+#submit {
+    color: white;
+    background-color: #1E3240;
+    margin-top: 5px;
+}
+
+img{
+    max-width: 80%; 
+}
+
+.twoColumn{
+    width: 48%;
+    float: left;
+    border: 1px solid red;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }

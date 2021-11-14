@@ -1,0 +1,12 @@
+body{
+    background-color: white;
+    display: block;
+    color: #1E3240;
+    margin: 10px;
+    font-family: 'Mulish', sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+    
+  }

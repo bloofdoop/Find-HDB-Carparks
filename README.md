@@ -64,24 +64,3 @@ If you scroll further below, you’ll see all these carparks displayed in a list
 ***Scenario 2: Get parking information around user's current location***
 
 Get Current Location: By clicking on **"Or Use Current Locaiton Instead"**, application will show the parking information around user's current location
-
-***Mini Feature: Send feedback to the application designer***
-
-At the navigation bar on top, there’s an **About** tab that tells you about our project. And if there’s any feedback you have regarding the application, whether it’s a bug or to suggest some room for improvement, we provided our contact details for 5squared. You can fill it in with some information, press **Send** and we’ll automatically receive the email where we’ll look through the problem for you.
-
-## :gift: Other Things ##
-
-* [FIGMA] URL/Link: https://www.figma.com/file/0cZldGRAIdkLUblzTFLqkC/IS216-project?node-id=110%3A6
-* [User Flow]  URL/Link: https://lucid.app/lucidchart/d3eb1e9e-2612-459a-be96-f238b3602a0f/edit?viewport_loc=-315%2C115%2C1824%2C1077%2C0_0&invitationId=inv_d9d01c8c-e1a3-4c14-ab1d-b6456a22c753
-![IS216 User flow_process diagram](https://user-images.githubusercontent.com/89092999/141613883-f394cc16-f94c-469c-8e6d-5cacff52369b.png)
-
-* [Architecture]  URL/Link:
-
-
-<!-- ## 🤓 Useful Resources ##
-
-* [**Markdown** Cheat Sheet](https://www.markdownguide.org/cheat-sheet/)
-* [**GOOD** README Example 1](https://github.com/testing-library/cypress-testing-library)
-* [**GOOD** README Example 2](https://github.com/typeorm/typeorm)
-* [**GOOD** README Example 3](https://github.com/amark/gun)
-* [**GOOD** README Example 4](https://github.com/google/leveldb) -->

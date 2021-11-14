@@ -41,7 +41,7 @@ const app = Vue.createApp({
     data() {
         return {
             search_radius: 500,
-            APIKEY: "AIzaSyCN0Da8hXmIOORF9yZOInzJ5SzevC2Jsp8",
+            APIKEY: "INSERT_API_KEY_HERE",
             urls: {
                 geocode_url: "https://maps.googleapis.com/maps/api/geocode/json?address=",
                 epsg_url: "https://developers.onemap.sg/commonapi/convert/4326to3414",

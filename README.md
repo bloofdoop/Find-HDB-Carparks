@@ -1,41 +1,11 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=454878&assignment_repo_type=GroupAssignmentRepo)
-
 # :city_sunset: 5 Squared
 ![1636820606(1)](https://user-images.githubusercontent.com/89132821/141651214-89b7ebe1-7161-4ae8-a3d6-00688b3f1be9.png) ![1636821113](https://user-images.githubusercontent.com/89132821/141651454-635fd850-5c77-4e93-a90c-36d40a8329c4.png)
+
+* This was a group project done up as part of my Web Application Development module in school. We were tasked to build a simple application that integrated external APIs and used a responsive framework. My role was to build the backend where I used mainly Vue.js. You can access our website from https://d19j4mj1nkkikx.cloudfront.net/home.html.
 
 * In this project, we aim to build a web-based application for drivers to use to aid them in finding available car parks. This will help drivers plan their route more efficiently and help them save time by not needing to find other available car parks when their chosen car park is full. Most Singaporean drivers love free parking, and this application will allow users to view car parks that have free parking within a 500m radius from their desired location. With the use of real-time APIs like Carpark Availability by Govtech, drivers are ensured that they will receive accurate information with regards to car park availability, helping them tackle the problem of searching for car parks or paying expensive parking when there are free options nearby.
 
 * Our project is aimed towards Singaporean drivers, who wishes to find the cheapest, most walkable carpark from their destination
-
-### Download the project files to the web root directory and render the webpage in browser
-
-1. In the Github branch “main”, click on Code -> Download ZIP -> is216-project-group25-main.zip
-
-![1636859676(1)](https://user-images.githubusercontent.com/89132821/141666058-4f582eda-0bc0-48a7-a419-fcfd1a4cbad2.png)
-
-2. Unzip the zipped files in your web root directory (Or any meaningful sub-directory):
-
->> For example (WAMP):    C:\wamp64\www\\...\is216-project-group25-main
-
-3. Next, visit web pages (.html) via HTTP protocol: open google Chrome and key in the correct path (example: http://localhost/.../is216-project-group25-main/Project) in the address bar and the browser will show the index of the files. By then developers can click on Home.html, and the home page of the application will be shown accordingly. Developers can freely edit the code and see how the webpage view be rendered in browser.
-
-### How to get Google Map API ( https://cloud.google.com/gcp )
-
-1. After signing up for an account, go to “Google Maps Platform", select “Maps Static API", and enable “Maps Static API"
-
-2. Enabling the following APIs 
- 
-![image](https://user-images.githubusercontent.com/89132821/141653348-3bb1a4e7-bec3-4ff5-86c3-dfdffa8129ca.png)
-
-
-3. Getting API Kay: Credentials -> Credentials in APIs & Services -> +CREAT CREDENTIALS -> API Key and you will get an API key
-![image](https://user-images.githubusercontent.com/89132821/141653336-09105f39-1967-4390-bf0d-46893adbaf14.png)
-
-
-4. Go Metrics to track your API usage. Be careful about it.
-
-5. Input your API Key in ...\is216-project-group25-main\Vue\integ.js line 44
-![image](https://user-images.githubusercontent.com/89132821/141653624-94b98293-17c4-474d-9aa4-5917925ddc56.png)
 
 ## :computer: How to Use Our Web Application (for Visitors to our Website) ##
 

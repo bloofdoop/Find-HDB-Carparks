@@ -3,65 +3,9 @@
 # :city_sunset: 5 Squared
 ![1636820606(1)](https://user-images.githubusercontent.com/89132821/141651214-89b7ebe1-7161-4ae8-a3d6-00688b3f1be9.png) ![1636821113](https://user-images.githubusercontent.com/89132821/141651454-635fd850-5c77-4e93-a90c-36d40a8329c4.png)
 
-
-## :running: Contributors
-| Names | Email |
-| ----------- | ----------- |
-| Wong Ju Da | juda.wong.2020@scis.smu.edu.sg |
-| Cindy Clara| cindyclara.2020@scis.smu.edu.sg |
-| Richard Goh Jiangwei| richardgoh.2019@business.smu.edu.sg |
-| Zhang Siyang| syzhang.2019@scis.smu.edu.sg |
-| Kevin Vincent Yoong Chun Han| kevinyoong.2020@scis.smu.edu.sg |
-
-## :milky_way: Project Overview ##
-
-<!-- * Describe your project. What is it called? What does it do? Why did you make this web application? Who will benefit from using your web application? Describe your users - who are they? (anyone? or specific target age group or gender? region? country?)
-* Feel free to use diagrams and images to describe. For example, if you have a system architecture diagram, please place it here and describe it. If you have a business process diagram, you can also place it here and describe it. -->
-
 * In this project, we aim to build a web-based application for drivers to use to aid them in finding available car parks. This will help drivers plan their route more efficiently and help them save time by not needing to find other available car parks when their chosen car park is full. Most Singaporean drivers love free parking, and this application will allow users to view car parks that have free parking within a 500m radius from their desired location. With the use of real-time APIs like Carpark Availability by Govtech, drivers are ensured that they will receive accurate information with regards to car park availability, helping them tackle the problem of searching for car parks or paying expensive parking when there are free options nearby.
 
 * Our project is aimed towards Singaporean drivers, who wishes to find the cheapest, most walkable carpark from their destination
-
-## :mag: How to Install and Run Our Web Application (for Developers) ##
-
-<!-- * If a new developer were to have access to your IS216 project GitHub repo (and subsequently your source code files) and replicate your development environment on his development laptop computer, what are the steps he should take?
-* What does he needs to install on his development laptop computer? How can he download your project files and run it on his own computer?
-* Provide a step-by-step description of how to get the development environment running. You can choose to do so for at least 1 Operating System (Windows 10 or Mac OS).
-* Feel free to use diagrams and images to describe. -->
-### For Windows developer:
-
-In order to install and run the web application for developer at his own computer, a proper development environment should be set up and the projects files should be downloaded to the right directory. Following are the step-by-step instructions:
-
-### Development environment
-
-Visual Studio Code (Recommended code editor): Download ( https://code.visualstudio.com/download )
-
-Google Chrome (Web browser): Download the latest version( https://www.google.com/intl/en_sg/chrome/) 
-
-WAMP (Localhost): Download WAMP using this link (https://sourceforge.net/projects/wampserver/files/latest/download)
-
-> #### Important things to note for WAMP installation: 
->
-> - By default, anything you download will be in C:\Users\username\Downloads. If you have change your download directory, please find the file named wampserver3.2.3_x64.
-> - Please CHOOSE MYSQL 8.0.21 option
-> - Setup will ask for your default browser. We will use Chrome as our default Browser
-> - Remember phpMyAdmin user name is root and there is no password
->  
-
-> #### Running your WAMP server:
->
-> - Double click on the WAMPSERVER64 ICON on your desktop.
-> - If you see User account control screen. [Do you want to allow this app from an unknown publisher to make changes to your device?] Click [Yes].
-> - When WAMP is started, you will see an [W] icon in the task bar. Click on the [up arrow] (as highlighted in Blue Square in the figure below) in the taskbar to show hidden icons. The [W] icon is indicated by the red arrow.
-> - The WAMP icon should be GREEN and when you mouse over the icon, it will say “local server: All services are running”.
-> - Left click on the icon and go to PHP->Version->7.4.9. We are using this version of PHP.
-> - Make sure MYSQL version is 8.0.21.
-> - Disable MariaDB. Right click on WAMP Icon in the tray. Wamp Settings -> Uncheck Allow MariaDB.
-> - Make sure the DEFAULT PORT of MYSQL is 3306. You can change the port number by Right Click WAMP Icon -> Tools-> under port use by MySQL-> use a port Other than XXXX. WAMP will be restarted.
-> - Your Root directory will be in C:/wamp64/www
-> - All your HTML , PHP, JS , CSS should all reside in folders within the www folder.
-> - References: http://www.wampserver.com/en/
-> 
 
 ### Download the project files to the web root directory and render the webpage in browser
 
@@ -92,79 +36,6 @@ WAMP (Localhost): Download WAMP using this link (https://sourceforge.net/project
 
 5. Input your API Key in ...\is216-project-group25-main\Vue\integ.js line 44
 ![image](https://user-images.githubusercontent.com/89132821/141653624-94b98293-17c4-474d-9aa4-5917925ddc56.png)
-
-## :bulb:  How to Deploy Our Web Application (for Developers) ##
-
-* Our web application can be accessed at https://d19j4mj1nkkikx.cloudfront.net
-
-
-### Steps to deploy our website
-
-1. Create an account at https://aws.amazon.com/
-
-2. Search for "S3" in the search bar on the home page. 
-
-![alt text](https://i.imgur.com/7s0Bkzn.png "Logo Title Text 1")
-
-3. Once on Amazon S3 page, click "Create Bucket" on the right. &nbsp; &nbsp; 
-
-![alt text](https://i.imgur.com/QfTvatT.png "Create Bucket")
-
-4. Enter your desired bucket name, leaving the other options untouched.
-
-5. Enter the newly created bucket and click upload to upload your files.
-
-6. After uploading, click on property and scroll all the way to the bottom to find "Static website hosting".
-
-7. Click on edit on the right and enable static website hosting. Under index document, enter "home.html" and save changes. 
-
-![alt text](https://i.imgur.com/vIF11ZY.png "Static host settings")
-
-8. Next, click on permissions and under "Block public access (bucket settings)", click edit and uncheck "block all public access" and save. 
-
-9. Under permissions, scroll down and click edit next to "Bucket policy". Enter the following code:
-
-``` 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "PublicReadGetObject",
-            "Effect": "Allow",
-            "Principal": "*",
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::5squared/*"
-        }
-    ]
-}
-```
-10. Go back to "Properties" and scroll down to retrieve the url for your deployed website*. 
-
-![alt text](https://i.imgur.com/2xAd1RO.png "Static host settings")
-
-**\*Note: S3 website will be unable to get current location as it is unsecure.**
-
-### Steps to secure deployed website
-
-1. From AWS, navigate to [CloudFront](https://console.aws.amazon.com/cloudfront/v3/home#/distributions)
-
-2. Create a new distribution. &nbsp; &nbsp; ![alt text](https://i.imgur.com/1teQkPD.png "Create distribution")
-
-3. Under Origin domain, enter your created S3 static website URL. 
-
-![alt text](https://i.imgur.com/hpj0fLr.png "Orgin Domain")
-
-4. Enable Origin Shield, select any region. 
-
-![alt text](https://i.imgur.com/cwT5qYQ.png "Origin Shield")
-
-5. Leave the other settings unchanged and create distribution. 
-
-6. Locate your new website URL on the [CloudFront](https://console.aws.amazon.com/cloudfront/v3/home#/distributions) homepage under "Domain name". 
-    
-![alt text](https://i.imgur.com/UMN195f.png "Origin Shield")
-
-7. You have now successfully deployed your web application.
 
 ## :computer: How to Use Our Web Application (for Visitors to our Website) ##
 

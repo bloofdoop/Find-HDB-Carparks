@@ -1,7 +1,7 @@
 # :city_sunset: 5 Squared
 ![1636820606(1)](https://user-images.githubusercontent.com/89132821/141651214-89b7ebe1-7161-4ae8-a3d6-00688b3f1be9.png) ![1636821113](https://user-images.githubusercontent.com/89132821/141651454-635fd850-5c77-4e93-a90c-36d40a8329c4.png)
 
-* This was a group project done up as part of my Web Application Development module in school. We were tasked to build a simple application that integrated external APIs and used a responsive framework. My role was to build the backend where I used mainly Vue.js. You can access our website from https://d19j4mj1nkkikx.cloudfront.net/home.html.
+* This was a group project done up as part of my Web Application Development module in school. We were tasked to build a simple application that integrated external APIs and used a responsive framework. My role was to build the backend where I used mainly Vue.js. You can access our website from https://d3s1xz0zzn3fi9.cloudfront.net/.
 
 * In this project, we aim to build a web-based application for drivers to use to aid them in finding available car parks. This will help drivers plan their route more efficiently and help them save time by not needing to find other available car parks when their chosen car park is full. Most Singaporean drivers love free parking, and this application will allow users to view car parks that have free parking within a 500m radius from their desired location. With the use of real-time APIs like Carpark Availability by Govtech, drivers are ensured that they will receive accurate information with regards to car park availability, helping them tackle the problem of searching for car parks or paying expensive parking when there are free options nearby.
 
